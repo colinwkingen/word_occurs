@@ -26,5 +26,11 @@ describe('the controls for word occurs',  {:type => :feature}) do
     click_button('Submit')
     expect(page).to have_content('4')
   end
-  
+  it('return a formatted version of the input string before returning the original and occurance number') do
+    visit('/')
+    fill_in('sentence', :with => 'Potato do I Potato!! as !the potato becomes## potato')
+    fill_in('target_word', :with => 'potato')
+    click_button('Submit')
+    expect(page).to have_content('potato do i potato as the potato becomes potato')
+  end
 end

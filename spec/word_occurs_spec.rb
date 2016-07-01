@@ -20,6 +20,6 @@ describe("String#string_process") do
     expect("the Potato in Potato potato Mainly in the potato".string_process()).to(eq("the potato in potato potato mainly in the potato"))
   end
   it("takes an input string and returns a string based on that input with punctuation removed") do
-    expect("normally! I pr*fer... yam$.".string_process()).to(eq("normally i prefer yams"))
+    expect("normally! I pre*fer... yams$.".string_process()).to(eq("normally i prefer yams"))
   end
 end
