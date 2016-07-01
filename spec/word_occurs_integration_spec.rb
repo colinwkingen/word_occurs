@@ -19,11 +19,12 @@ describe('the controls for word occurs',  {:type => :feature}) do
     click_button('Submit')
     expect(page).to have_content('0')
   end
-  it('fills in a text field and searcsentencehes for multiple occurances of a word in it') do
+  it('fills in a text field and search sentences for multiple occurances of a word in it') do
     visit('/')
     fill_in('sentence', :with => 'potato do I potato as the potato becomes potato')
     fill_in('target_word', :with => 'potato')
     click_button('Submit')
     expect(page).to have_content('4')
   end
+  
 end

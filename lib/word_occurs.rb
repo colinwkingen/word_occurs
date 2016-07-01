@@ -10,3 +10,8 @@ class String
     word_occurance
   end
 end
+
+class String
+  define_method(:string_process) do
+    raw_input = self
+end
