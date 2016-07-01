@@ -10,3 +10,18 @@ class String
     word_occurance
   end
 end
+
+class String
+  define_method(:string_process) do
+    raw_input = self.downcase
+    index = 0
+    new_output = ""
+    raw_input.each_char do |chr|
+      if chr =~ /[a-z ]/
+        new_output.concat(chr)
+      end
+      index += 1
+    end
+    new_output
+  end
+end

@@ -12,3 +12,14 @@ describe("String#word_occurs") do
     expect("normally I prefer yams".word_occurs("hustling")).to(eq(0))
   end
 end
+describe("String#string_process") do
+  it("takes an input string and returns a string based on that input") do
+    expect("potato".string_process()).to(eq("potato"))
+  end
+  it("takes an input string and returns a string based on that input with downcased letters") do
+    expect("the Potato in Potato potato Mainly in the potato".string_process()).to(eq("the potato in potato potato mainly in the potato"))
+  end
+  it("takes an input string and returns a string based on that input with punctuation removed") do
+    expect("normally! I pre*fer... yams$.".string_process()).to(eq("normally i prefer yams"))
+  end
+end
