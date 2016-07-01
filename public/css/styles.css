@@ -1,0 +1,33 @@
+body {
+  background-color: #229;
+  color: #FAFAF2;
+}
+.all_text {
+  background-color: #226;
+  font-family: monospace;
+}
+h1 {
+  padding: 0.5em;
+}
+h2 {
+  padding: 0.5em;
+}
+#last_element {
+  padding-bottom: 40%;
+}
+#form_area {
+  width: 80%;
+  margin-left: 10%;
+  background-color: #226;
+  font-family: monospace;
+  color: #FAFAF2;
+  padding: 2em;
+}
+.btn-lg {
+  background-color: #C03333;
+  padding: 2em;
+  font-size: 2em;
+}
+#form_area {
+  margin-top: 20%;
+}
