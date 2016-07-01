@@ -1,4 +1,4 @@
-## Word Occurance 
+## Word Occurance
 
 #### By Colin Kingen, 2016
 
@@ -11,6 +11,8 @@ within that input.
 
 ## Setup/Installation Requirements
 
+This app is viewable at:
+https://francophone-whistler-93824.herokuapp.com/
 
 To install this repository into a new project each time, first
 
